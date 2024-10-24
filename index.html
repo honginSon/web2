@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="screen">
+        <h1>이력서</h1>
+        <div id="base-profile" class="profile">
+            <div class="profile-personal">
+                <div>
+                    <img src="ex.jpeg">
+                </div>
+                <div class="profile-personal-data">
+                    <div>이름</div>
+                    <div>이메일</div>
+                    <div>휴대전화</div>
+                    <div>주소</div>
+                </div>
+            </div>
+
+            <div class="profile-detail">
+                <div class="item">학력</div>
+                <div class="item">경력</div>
+                <div class="item">인턴/대외 활동</div>
+                <div class="item">자격증</div>
+            </div>
+        </div>
+
+        <div id="cover-letter" class="section">
+            <h3>자기소개서</h3>
+            <div class="content">
+                <h4>제목 1</h4>
+                <h5>소제목 1</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus nec ante consequat, eget
+                imperdiet ipsum convallis. Nullam ipsum erat, facilisis sed luctus et, hendrerit sit amet libero.
+                Suspendisse vulputate consequat ante non ultricies. Pellentesque mollis felis tellus, id sodales velit
+                tristique nec. Sed consequat dui in porta elementum. Sed libero magna, hendrerit non odio eu, posuere
+                ornare eros. Morbi lacinia maximus est varius dignissim. Aenean hendrerit lorem sit amet neque molestie
+                pellentesque. Maecenas faucibus massa lacus, nec mattis metus sagittis non. In mollis congue dolor, sed
+                tempor nisi consectetur in. Nullam rutrum, nisi quis ultricies porta, nulla eros tincidunt lectus, vel
+                tristique urna urna eget lacus.
+                <h4>제목 2</h4>
+                <h5>소제목 1</h5>
+                Integer molestie magna enim, ut pulvinar ligula mattis eleifend. Fusce sed sapien magna. Aenean lobortis
+                ipsum vitae erat vehicula, ut imperdiet ligula feugiat. Vestibulum eget placerat nulla. Cras consequat
+                sem quis congue commodo. Cras ut lectus ligula. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus.
+
+                <h5>소제목 2</h5>
+                Nullam tristique odio dui, in sollicitudin lectus tristique ut. Praesent vel neque non magna molestie
+                efficitur. Sed accumsan nec velit at iaculis. Donec congue tortor sed semper porta. Aliquam tristique
+                maximus orci, id ultricies ipsum egestas eget. Cras nisl leo, ullamcorper in augue in, luctus dictum
+                sem.
+
+                <h4>제목 3</h4>
+                nteger felis tellus, ultrices ut lorem id, imperdiet fermentum quam. Proin diam sem, interdum mollis
+                urna ac, porttitor interdum tellus. Ut vitae ex at lacus faucibus dictum eu et odio. Sed quam augue,
+                fermentum ornare enim non, volutpat lacinia nisl. Sed sollicitudin luctus porta. Quisque eleifend tellus
+                eget dolor venenatis consequat.
+
+                <h5>소제목 1</h5>
+                Pellentesque faucibus maximus sem, eu feugiat turpis elementum et. Nam mattis orci sit amet fringilla
+                eleifend. Aenean ultricies turpis eget urna auctor, aliquam posuere neque interdum. Maecenas euismod
+                sollicitudin lectus nec vestibulum. Ut dictum est quis commodo bibendum. Vestibulum non lobortis risus.
+                Duis sed velit quam. Suspendisse dignissim posuere felis sodales porttitor. Suspendisse leo augue,
+                pellentesque non placerat ut, facilisis eget magna. Integer faucibus finibus arcu, vel mollis nulla
+                iaculis vitae. Donec ac magna porttitor, convallis magna quis, pulvinar mi. Duis mollis dolor velit, eu
+                aliquet eros accumsan consequat. Nam facilisis elit ut metus aliquam, sit amet finibus lacus pulvinar.
+                Proin consequat dapibus fermentum. Nam dapibus neque vitae purus rhoncus, nec rutrum diam aliquam. Nulla
+                nec diam vitae libero elementum vestibulum.
+            </div>
+        </div>
+
+        <div id="portfolio" class="section">
+            <h3>포트폴리오</h3>
+            <div class="content">
+                <div class="link">
+                    <div class="title">노션</div>
+                    <a href="https://vigorous-echinacea-4a2.notion.site"
+                        target="_blank">https://vigorous-echinacea-4a2.notion.site</a>
+                </div>
+                <div class="link">
+                    <div class="title">Github</div>
+                    <a href="https://www.github.com/honginSon" target="_blank">https://www.github.com/honginSon</a>
+                </div>
+                <div class="link">
+                    <div class="title">블로그</div>
+                    <a href="https://www.sonnyday.tistory.com" target="_blank">https://www.sonnyday.tistory.com</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="message">
+                위의 모든 기재사항은 사실과 다름없음을 확인합니다.
+            </div>
+            <div class="writer">작성자 : 손홍인</div>
+        </footer>
+    </div>
+
+    <aside>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#base-profile">인적사항</a></li>
+                <li><a href="#cover-letter">자기소개서</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+            </ul>
+        </div>
+
+        <button class="scroll-top">Top</button>
+    </aside>
+
+
+    <script>
+        var topBtnClick = function () {
+            window.scrollTo({
+                top: 0, behavior: "smooth"
+            });
+        }
+
+        var scrollTopBtn = document.querySelector(".scroll-top");
+        scrollTopBtn.addEventListener("click", topBtnClick);
+
+        var links = document.querySelectorAll(".sidebar a");
+
+        var sideBarClick = function () {
+            for (var l of links) {
+                l.classList.remove("selected");
+            }
+            this.classList.add("selected");
+        };
+
+        for (var l of links) {
+            l.addEventListener("click", sideBarClick);
+        }
+    </script>
+</body>
+
+</html>

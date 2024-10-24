@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    background-color: #F2F4F7;
+}
+
+#screen {
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+#portfolio .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#portfolio .content .link {
+    display: flex;
+}
+
+#portfolio .content .link .title {
+    padding-right: 20px;
+    border-right: 1px solid gray;
+    font-weight: bold;
+}
+
+#portfolio .content .link a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+.profile-personal {
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    height: 182px;
+}
+
+.profile-personal img {
+    width: 140px;
+    height: 182px;
+}
+
+.profile-personal-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0 20px 40px;
+}
+
+.profile-detail {
+    display: flex;
+    background-color: white;
+}
+
+.profile-detail .item:first-child {
+    width: 233px;
+}
+
+.profile-detail .item {
+    width: 235px;
+}
+
+.item {
+    height: 150px;
+    padding: 27px 15px 0;
+    text-align: center;
+}
+
+.profile-detail .item:first-child:after {
+    display: none;
+}
+
+.profile-detail .item:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 89px;
+    background-color: #edeef0;
+}
+
+.section {
+    margin-bottom: 33px;
+}
+
+.section h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section .content {
+    border-top: 1px solid black;
+    background-color: white;
+    padding: 40px;
+}
+
+.section .content h4 {
+    font-size: 17px;
+}
+
+.section .content h5 {
+    font-size: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 40%;
+    right: 15%;
+}
+
+.sidebar ul {
+    list-style-type: circle;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.selected {
+    font-weight: 800;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer .message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+footer .writer {
+    font-size: 14px;
+    color: gray;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 16%;
+    bottom: 40px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+
+    background-color: gray;
+}
+
+.scroll-top:hover {
+    cursor: pointer;
+}
